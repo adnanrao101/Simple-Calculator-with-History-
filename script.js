@@ -1,44 +1,191 @@
 const history = [];
 
-  function calculate() {
-    const num1 = +document.getElementById("num1").value;
-    const num2 = +document.getElementById("num2").value;
-    const operator = document.getElementById("operator").value.trim();
+function calculate(){
+  const num1 = +document.getElementById("num1").value;
+  const num2 = +document.getElementById("num2").value;
+  const operator = document.getElementById("operator").value.trim();
 
-    let result;
-    if (operator === "+") {
-      result = num1 + num2;
-    } else if (operator === "-") {
-      result = num1 - num2;
-    } else if (operator === "*") {
-      result = num1 * num2;
-    } else if (operator === "/") {
-      if (num2 === 0) {
-        alert("❌ Cannot divide by zero!");
-        return;
-      }
-      result = num1 / num2;
-    } else {
-      alert("❌ Invalid operator");
-      return;
-    }
+let result;
 
-    const resultText = `${num1} ${operator} ${num2} = ${result}`;
-    document.getElementById("result").innerText = "Result: " + result;
+if (operator === "+"){
+  result = num1 + num2
+} else if (operator === "-"){
+  result = num1 - num2
+} else if (operator === "*"){
+  result = num1 * num2
+} else if (operator === "/"){
+   if (num2 === 0) {
+   alert("❌ Cannot divide by zero!");
+   return;
+}
+   result = num1 / num2
+} else {
+   alert("❌ Invalid operator");
+   return;
+}
 
-    history.push(resultText);
-    updateHistory();
-  }
 
-  function updateHistory() {
-    const historyList = document.getElementById("historyList");
-    historyList.innerHTML = ""; // clear old
-    history.forEach(item => {
-      const div = document.createElement("div");
-      div.innerText = item;
-      historyList.appendChild(div);
-    });
-  }
+const resultText = `${num1} ${operator} ${num2} = ${result}`
+document.getElementById("result").innerText = "Result: " + result;
+
+history.push(resultText);
+updateHistory();
+
+}
+
+
+function updateHistory() {
+const historyList = document.getElementById("historyList");
+historyList.innerHTML = ""; // clear old
+history.forEach(item => {
+  const div = document.createElement("div");
+  div.innerText = item;
+  historyList.appendChild(div);
+});
+}function updateHistory() {
+const historyList = document.getElementById("historyList");
+historyList.innerHTML = ""; // clear old
+history.forEach(item => {
+  const div = document.createElement("div");
+  div.innerText = item;
+  historyList.appendChild(div);
+});
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const history = [];
+
+//   function calculate() {
+//     const num1 = +document.getElementById("num1").value;
+//     const num2 = +document.getElementById("num2").value;
+//     const operator = document.getElementById("operator").value.trim();
+
+//     let result;
+//     if (operator === "+") {
+//       result = num1 + num2;
+//     } else if (operator === "-") {
+//       result = num1 - num2;
+//     } else if (operator === "*") {
+//       result = num1 * num2;
+//     } else if (operator === "/") {
+//       if (num2 === 0) {
+//         alert("❌ Cannot divide by zero!");
+//         return;
+//       }
+//       result = num1 / num2;
+//     } else {
+//       alert("❌ Invalid operator");
+//       return;
+//     }
+
+//     const resultText = `${num1} ${operator} ${num2} = ${result}`;
+//     document.getElementById("result").innerText = "Result: " + result;
+
+//     history.push(resultText);
+//     updateHistory();
+//   }
+
+//   function updateHistory() {
+//     const historyList = document.getElementById("historyList");
+//     historyList.innerHTML = ""; // clear old
+//     history.forEach(item => {
+//       const div = document.createElement("div");
+//       div.innerText = item;
+//       historyList.appendChild(div);
+//     });
+//   }
 
 
 

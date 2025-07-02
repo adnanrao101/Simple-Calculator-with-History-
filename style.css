@@ -1,4 +1,168 @@
- body {
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e8f0f7;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.calculator{
+    width: 300px;
+    background-color: #ffffff; /* clean white card */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+input{
+    width: 250px;
+    padding: 15px;
+    margin: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+select{
+    width: 280px;
+    padding: 15px;
+    margin: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    color: #333;  
+}
+
+
+
+
+button {
+    width: 150px;
+    padding: 8px;
+    margin-left: 80px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #a3c4bc; /* soft border */
+    background-color: #5da399; /* calm green-blue */
+    color: white;
+    cursor: grab; /* Grab feel, still clickable */
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+Hover effect */
+button:hover {
+    background-color: #4b9087; /* slightly darker on hover */
+    color: #ffffff;
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Click (active) effect */
+ button:active {
+    transform: scale(0.95);
+    background-color: #3c7d74;
+    cursor: grabbing; /* Optional: show grabbing while clicking */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* body {
       font-family: Arial, sans-serif;
       background-color: #f0f2f5;
       display: flex;
@@ -31,7 +195,7 @@
     }
 
     button:hover {
-      background-color: #0056b3;
+      background-color: #384655;
     }
 
     .result, .history {
@@ -45,4 +209,4 @@
       max-height: 150px;
       overflow-y: auto;
       font-size: 14px;
-    }
+    } */
